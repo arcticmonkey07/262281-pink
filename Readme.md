@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Петр Васюкович](https://up.htmlacademy.ru/adaptive/14/user/262281).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Сенченко](https://htmlacademy.ru/profile/elementk0).
 
 ---
 
