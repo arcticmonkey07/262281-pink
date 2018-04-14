@@ -37,9 +37,9 @@
         <div class="download__wrapper">
           <a class="download__button button">Скачать приложение</a>
           <ul class="download__list">
-            <li class="download__item download__item-apple"></li>
-            <li class="download__item download__item-android"></li>
-            <li class="download__item download__item-windows"></li>
+            <li class="download__item download__item_apple"></li>
+            <li class="download__item download__item_android"></li>
+            <li class="download__item download__item_windows"></li>
           </ul>
           <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
@@ -47,8 +47,8 @@
 
       <section class="information">
         <h2 class="visually-hidden">Информация приложения Пинк</h2>
-        <b class="information__promo-first">Устали от серости мегаполиса?</b>
-        <b class="information__promo-second">Нам есть, что вам предложить!</b>
+        <p class="information__promo-first">Устали от серости мегаполиса?</p>
+        <p class="information__promo-second">Нам есть, что вам предложить!</p>
         <ul class="information__list">
           <li class="information__item">
             <h3 class="information__title">Поднимает настроение</h3>
@@ -66,26 +66,45 @@
       </section>
 
       <section class="reviews">
-        <div class="reviews__wrapper slider">
+        <div class="slider">
           <h2 class="visually-hidden">Отзывы о приложении Пинк</h2>
-          <ul class="reviews__list slider__list">
-            <li class="reviews__item slider__item">
-              <h3 class="reviews__title">Николай Петров</h3>
-              <p class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <ul class="review slider__list">
+            <li class="review__item slider__item">
+              <h3 class="review__title">Николай Петров</h3>
+              <p class="review__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
           </ul>
-          <p class="reviews__switch-list slider__switches">
-            <button class="reviews__switch reviews__switch--active" type="button"></button>
-            <button class="reviews__switch" type="button"></button>
-            <button class="reviews__switch" type="button"></button>
-          </p>
+          <div class="slider__switches">
+            <button class="slider__switch slider__switch_active" type="button"></button>
+            <button class="slider__switch" type="button"></button>
+            <button class="slider__switch" type="button"></button>
+          </div>
         </div>
       </section>
 
       <section class="price">
         <div class="price__wrapper slider">
           <h2 class="visually-hidden">Цены на приложение Пинк</h2>
-          <table class="price__list">
+          <div class="slider__item">
+            <table class="price__item">
+              <tr>
+                <td class="price__package">
+                  <b class="price__package-name">Стандарт</b>
+                  <span class="price__package-value">3,99 USD</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="price__text">Розовый фильтр</td>
+              </tr>
+              <tr>
+                <td class="price__text">Смайлики</td>
+              </tr>
+              <tr>
+                <td class="price__text">Комментарии</td>
+              </tr>
+            </table>
+          </div>
+          <!-- <table class="price__list">
             <tr>
               <td class="visually-hidden"></td>
               <td class="price__package">
@@ -119,12 +138,12 @@
               <td class="price__no"></td>
               <td class="price__yes"></td>
             </tr>
-          </table>
-          <p class="price__switch-list slider__switches">
-            <button class="price__switch" type="button"></button>
-            <button class="price__switch price__switch--active" type="button"></button>
-            <button class="price__switch" type="button"></button>
-          </p>
+          </table> -->
+          <div class="slider__switches">
+            <button class="slider__switch" type="button"></button>
+            <button class="slider__switch slider__switch_active" type="button"></button>
+            <button class="slider__switch" type="button"></button>
+          </div>
         </div>
       </section>
 
@@ -133,15 +152,15 @@
         <b class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</b>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <span class="contacts__text">Звоните:</span>
+            <div class="contacts__text">Звоните:</div>
             <a class="contacts__descr" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
           <li class="contacts__item">
-            <span class="contacts__text">Пишите:</span>
+            <div class="contacts__text">Пишите:</div>
             <a class="contacts__descr" href="#">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item">
-            <span class="contacts__text">Приезжайте в гости:</span>
+            <div class="contacts__text">Приезжайте в гости:</div>
             <a class="contacts__descr" href="#">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
