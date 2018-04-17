@@ -4,14 +4,14 @@
   background-image:
     url("../../img/iphone-hand-mobile@1x.png"),
     url("../../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: left bottom, 0 0;
 }
 
 .page-header_inner {
   margin-bottom: 50px;
   height: 237px;
-  background-image:url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -32,6 +32,6 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: 100;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
 }

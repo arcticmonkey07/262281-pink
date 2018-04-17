@@ -20,7 +20,7 @@
 .form__input::-webkit-input-placeholder {
   font-size: 18px;
   line-height: 30px;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .form__achievements {
@@ -40,12 +40,6 @@
   line-height: 18px;
   color: $redColor;
   text-align: center;
-}
-
-.form__label-text {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 300;
 }
 
 .form__contacts {
@@ -76,6 +70,7 @@
 .form__label-text {
   font-size: 18px;
   line-height: 30px;
+  font-weight: 300;
 }
 
 .form__comment {
@@ -92,7 +87,7 @@
 .form__button {
   font-size: 18px;
   line-height: 30px;
-  color: #fff;
+  color: #ffffff;
   background-color: #2aab6d;
   text-align: center;
 }
