@@ -1,0 +1,9 @@
+@import "normalize.scss";
+@import "mixins.scss";
+@import "variables.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+
+body {
+  background: pink;
+}
