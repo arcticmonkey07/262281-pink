@@ -1,0 +1,35 @@
+.upload {
+  margin-bottom: 40px;
+}
+
+.upload-promo {
+  margin-bottom: 45px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.upload__wrapper {
+  padding-bottom: 40px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.upload__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.upload__button {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.upload__button_post {
+  color: $redColor;
+}
+
+.upload__button_cancel {
+  color: rgba(40,54,69,0.1);
+}

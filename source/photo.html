@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк Фотографии</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header_inner">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="http://placehold.it/150x100" width="75" height="22" alt="Логотип Пинк">
       </a>
@@ -28,19 +29,20 @@
           </ul>
         </div>
       </nav>
+      <h1 class="page-header__title">Фотографии пользователей</h1>
     </header>
 
     <main class="page-main">
 
       <section class="photos">
-        <h1 class="page-title">Фотографии пользователей</h1>
+        <h2 class="visually-hidden">Фотографии пользователей</h2>
         <div class="photos__promo photos-promo">
           <p class="photos-promo__descr">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
 
         <article class="photos__item photo">
           <span class="photo__top">Панорама дня</span>
-          <img class="photo__img" src="http://placehold.it/150x100" alt="Фотография Анны">
+          <img class="photo__img" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография Анны">
           <div class="photo__wrapper">
             <h3 class="photo__name">Анна</h3>
             <span class="photo__time">(5 минут назад)</span>
@@ -50,7 +52,7 @@
         </article>
 
         <article class="photos__item photo">
-          <img class="photo__img" src="http://placehold.it/150x100" alt="Фотография Левона">
+          <img class="photo__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография Левона">
           <div class="photo__wrapper">
             <h3 class="photo__name">Левон</h3>
             <span class="photo__time">(5 часов назад)</span>
@@ -60,7 +62,7 @@
         </article>
 
         <article class="photos__item photo">
-          <img class="photo__img" src="http://placehold.it/150x100" alt="Фотография Антона">
+          <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография Антона">
           <div class="photo__wrapper">
             <h3 class="photo__name">Антон</h3>
             <span class="photo__time">(12 часов назад)</span>
@@ -70,7 +72,7 @@
         </article>
 
         <article class="photos__item photo">
-          <img class="photo__img" src="http://placehold.it/150x100" alt="Фотография Бориса">
+          <img class="photo__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография Бориса">
           <div class="photo__wrapper">
             <h3 class="photo__name">Борис</h3>
             <span class="photo__time">(20 часов назад)</span>
@@ -80,7 +82,7 @@
         </article>
 
         <article class="photos__item photo">
-          <img class="photo__img" src="http://placehold.it/150x100" alt="Фотография Сергея">
+          <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография Сергея">
           <div class="photo__wrapper">
             <h3 class="photo__name">Сергей</h3>
             <span class="photo__time">(25 часов назад)</span>
@@ -90,7 +92,7 @@
         </article>
 
         <article class="photos__item photo">
-          <img class="photo__img" src="http://placehold.it/150x100" alt="Фотография Максима">
+          <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография Максима">
           <div class="photo__wrapper">
             <h3 class="photo__name">Максим</h3>
             <span class="photo__time">(40 часов назад)</span>
@@ -100,7 +102,7 @@
         </article>
 
         <article class="photos__item photo">
-          <img class="photo__img" src="http://placehold.it/150x100" alt="Фотография Надежды">
+          <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография Надежды">
           <div class="photo__wrapper">
             <h3 class="photo__name">Надежда</h3>
             <span class="photo__time">(45 часов назад)</span>
@@ -112,12 +114,12 @@
 
       <section class="upload">
         <h2 class="visually-hidden">Секция загрузки фотографии</h2>
-        <div class="upload__promo promo">
-          <p class="promo__first">Затмите их всех!</p>
-          <p class="promo__second">Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="upload-promo">
+          <p class="upload-promo__first">Затмите их всех!</p>
+          <p class="upload-promo__second">Выкладывайте все, что накопилось в телефоне!</p>
         </div>
         <div class="upload__wrapper">
-          <img class="upload__img" src="http://placehold.it/150x100" alt="Загружаемая фотография">
+          <img class="upload__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Загружаемая фотография">
           <ul class="upload__list">
             <li class="upload__crop"></li>
             <li class="upload__fill"></li>
@@ -137,7 +139,7 @@
 
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="75" height="22" alt="Логотип Пинк">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Пинк">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">

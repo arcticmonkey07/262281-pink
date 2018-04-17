@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк Форма</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header_inner">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="http://placehold.it/150x100" width="75" height="22" alt="Логотип Пинк">
       </a>
@@ -28,17 +29,18 @@
           </ul>
         </div>
       </nav>
+      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
 
     <main class="page-main">
 
       <section class="form">
-        <h1 class="form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h2 class="visually-hidden">Секция Форма</h2>
         <p class="form__descr">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="form__name">
             <label class="form__label">
-              <div class="form__text">Фамилия:</div>
+              <span class="form__text">Фамилия:</span>
               <input class="form__input" type="text" placeholder="Укажите фамилию *">
             </label>
             <label class="form__label">
@@ -146,7 +148,7 @@
 
       <footer class="page-footer">
         <a class="page-footer__logo" href="index.html">
-          <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="75" height="22" alt="Логотип Пинк">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Пинк">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">

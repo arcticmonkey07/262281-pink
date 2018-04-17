@@ -1,0 +1,17 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__link {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}

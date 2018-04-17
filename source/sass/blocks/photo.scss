@@ -1,0 +1,30 @@
+.photo__top {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+  background-color: $redColor;
+  text-transform: uppercase;
+}
+
+.photo__wrapper {
+  margin-bottom: 20px;
+  padding-left: 15px;
+  background-color: #f3f3f3;
+}
+
+.photo__name {
+  margin: 0;
+  font-weight: 600;
+}
+
+.photo__time {
+  font-size: 12px;
+  font-weight: 100;
+  color: #a8abaf;
+}
+
+.photo__like {
+  font-size: 12px;
+  color: $redColor;
+}
