@@ -1,5 +1,5 @@
 .page-header {
-  height: 462px;
+  min-height: 462px;
   background-color: $mainColor;
   background-image:
     url("../../img/iphone-hand-mobile@1x.png"),
@@ -10,7 +10,7 @@
 
 .page-header_inner {
   margin-bottom: 50px;
-  height: 237px;
+  min-height: 237px;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -19,7 +19,7 @@
 .page-header__background {
   position: absolute;
   width: 320px;
-  height: 66px;
+  min-height: 66px;
   background-color: $mainColor;
   opacity: 0.3;
 }
