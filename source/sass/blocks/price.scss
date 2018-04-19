@@ -1,0 +1,30 @@
+.price {
+  margin-bottom: 45px;
+  padding-top: 90px;
+  padding-bottom: 45px;
+  background-color: #f2f2f2;
+}
+
+.price__package {
+  background-color: $mainColor;
+}
+
+.price__package-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.price__package-value {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+.price__text {
+  line-height: 30px;
+  text-transform: uppercase;
+}

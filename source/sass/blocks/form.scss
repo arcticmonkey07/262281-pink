@@ -1,0 +1,99 @@
+.form__descr {
+  margin-bottom: 40px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.form__name {
+  margin-bottom: 80px;
+  border: none;
+}
+
+.form__text {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
+  color: $redColor;
+  text-transform: uppercase;
+}
+
+.form__input::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.form__achievements {
+  margin-bottom: 35px;
+  padding-top: 35px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.form__achievements-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__achievements-title {
+  line-height: 18px;
+  color: $redColor;
+  text-align: center;
+}
+
+.form__contacts {
+  margin-bottom: 40px;
+  border: none;
+}
+
+.form__platform {
+  margin-bottom: 40px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.form__platform-title {
+  line-height: 18px;
+  color: $redColor;
+  text-align: center;
+}
+
+.form__platform-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__label-text {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.form__comment {
+  margin-bottom: 45px;
+  border: none;
+}
+
+.form__comment-title {
+  line-height: 30px;
+  color: $redColor;
+  text-align: center;
+}
+
+.form__button {
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #2aab6d;
+  text-align: center;
+}
+
+.form__required {
+  line-height: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}

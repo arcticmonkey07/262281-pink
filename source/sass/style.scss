@@ -1,0 +1,42 @@
+@import "normalize.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/download.scss";
+@import "blocks/information.scss";
+@import "blocks/reviews.scss";
+@import "blocks/review.scss";
+@import "blocks/price.scss";
+@import "blocks/contacts.scss";
+@import "blocks/photos.scss";
+@import "blocks/photo.scss";
+@import "blocks/upload.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/form.scss";
+
+body {
+  width: 320px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  color: $mainColor;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
