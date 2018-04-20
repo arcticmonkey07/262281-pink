@@ -1,14 +1,18 @@
 @import "normalize.scss";
 @import "fonts.scss";
 @import "variables.scss";
+@import "blocks/container.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/download.scss";
 @import "blocks/information.scss";
+@import "blocks/effect.scss";
 @import "blocks/reviews.scss";
 @import "blocks/review.scss";
 @import "blocks/price.scss";
+@import "blocks/slider.scss";
 @import "blocks/contacts.scss";
+@import "blocks/map.scss";
 @import "blocks/photos.scss";
 @import "blocks/photo.scss";
 @import "blocks/upload.scss";
@@ -16,7 +20,6 @@
 @import "blocks/form.scss";
 
 body {
-  width: 320px;
   font-size: 14px;
   line-height: 24px;
   font-family: "Open Sans", "Arial", sans-serif;

@@ -1,7 +1,21 @@
 .download {
   min-height: 270px;
   padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #1d2631;
+}
+
+.download__wrapper {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.download__promo {
+  display: none;
+  font-size: 40px;
+  font-weight: 300;
+  color: #fff;
 }
 
 .download__button {
@@ -11,7 +25,38 @@
   color: #ffffff;
 }
 
+.download__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .download__text {
   font-weight: 100;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .download {
+    margin: 0 auto;
+    width: 620px;
+    background-color: transparent;
+    outline: 1px solid red;
+  }
+  .download__wrapper {
+    margin: 0;
+    width: 300px;
+    outline: 1px solid red;
+  }
+  .download__promo {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 960px;
+  }
 }

@@ -1,5 +1,6 @@
 .main-nav {
   position: relative;
+  margin-left: auto;
 }
 
 .main-nav__list {
@@ -14,4 +15,13 @@
   font-weight: 600;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+  .main-nav__list {
+    display: flex;
+  }
 }
