@@ -36,11 +36,13 @@
   .contacts__title {
     font-size: 40px;
   }
+
   .contacts__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
   .contacts__item_center {
     flex-grow: 1;
   }

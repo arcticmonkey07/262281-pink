@@ -6,7 +6,7 @@
   font-size: 30px;
   line-height: 36px;
   font-weight: 600;
-  color: #000;
+  color: #000000;
 }
 
 .effect__link {
@@ -22,6 +22,7 @@
     width: 620px;
     outline: 1px solid red;
   }
+
   .effect__descr {
     margin-left: auto;
     width: 310px;
@@ -33,10 +34,12 @@
     padding-bottom: 90px;
     background-color: #f2f2f2;
   }
+
   .effect {
     margin-bottom: 0;
     width: 960px;
   }
+
   .effect__descr {
     width: 580px;
   }

@@ -15,7 +15,7 @@
   display: none;
   font-size: 40px;
   font-weight: 300;
-  color: #fff;
+  color: #ffffff;
 }
 
 .download__button {
@@ -43,11 +43,13 @@
     background-color: transparent;
     outline: 1px solid red;
   }
+
   .download__wrapper {
     margin: 0;
     width: 300px;
     outline: 1px solid red;
   }
+
   .download__promo {
     display: block;
   }

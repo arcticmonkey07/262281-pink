@@ -46,17 +46,21 @@
   .information__promo {
     font-size: 40px;
   }
+
   .information {
     min-height: 620px;
   }
+
   .information__wrapper {
     height: 490px;
   }
+
   .information__inner {
     display: flex;
     margin: 0 auto;
     width: 620px;
   }
+
   .information__list {
     margin-left: auto;
     width: 310px;
@@ -70,13 +74,16 @@
   .information {
     margin-bottom: 0;
   }
+
   .information__promo {
     font-size: 50px;
   }
+
   .information__wrapper {
     padding-bottom: 50px;
     height: 680px;
   }
+
   .information__inner {
     display: flex;
     margin: 0 auto;
@@ -84,11 +91,13 @@
     padding-right: 10px;
     width: 960px;
   }
+
   .information__list {
     display: flex;
     justify-content: space-around;
     width: 960px;
   }
+
   .information__item {
     width: 245px;
     height: 570px;
