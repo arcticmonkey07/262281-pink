@@ -1,6 +1,8 @@
 .review {
   margin: 0;
   padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   list-style: none;
 }
 
@@ -14,4 +16,33 @@
 .review__description {
   line-height: 30px;
   text-align: center;
+}
+
+.review__age {
+  display: none;
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .review__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review__title {
+    order: 2;
+  }
+
+  .review__age {
+    display: block;
+    order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__item {
+    width: 820px;
+  }
 }

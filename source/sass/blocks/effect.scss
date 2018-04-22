@@ -1,0 +1,46 @@
+.effect {
+  display: none;
+}
+
+.effect__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.effect__link {
+  color: $redColor;
+  text-decoration: underline;
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    width: 620px;
+    outline: 1px solid red;
+  }
+
+  .effect__descr {
+    margin-left: auto;
+    width: 310px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect__wrapper {
+    padding-bottom: 90px;
+    background-color: #f2f2f2;
+  }
+
+  .effect {
+    margin-bottom: 0;
+    width: 960px;
+  }
+
+  .effect__descr {
+    width: 580px;
+  }
+}

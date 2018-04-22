@@ -1,0 +1,9 @@
+.slider__switches {
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__switches {
+    display: none;
+  }
+}

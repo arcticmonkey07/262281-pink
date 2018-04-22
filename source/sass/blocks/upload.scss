@@ -8,10 +8,57 @@
   text-align: center;
 }
 
+.upload-promo__first {
+  margin: 0;
+}
+
+.upload-promo__second {
+  margin: 0 auto;
+  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+  }
+}
+
+.upload__background {
+  background-color: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 940px;
+  }
+}
+
 .upload__wrapper {
   padding-bottom: 40px;
   background-color: #f2f2f2;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin: 0 auto;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
+.upload__img {
+  margin-right: 20px;
+  width: 300px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 90px;
+  }
+}
+
+.upload__customize {
+  width: 300px;
 }
 
 .upload__list {

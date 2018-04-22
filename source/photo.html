@@ -3,33 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк Фотографии</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header page-header_inner">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="75" height="22" alt="Логотип Пинк">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <h1 class="page-header__title">Фотографии пользователей</h1>
+      <div class="page-header__container page-header__container_inner">
+        <div class="page-header__background"></div>
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <h1 class="page-header__title">Фотографии пользователей</h1>
+      </div>
     </header>
 
     <main class="page-main">
@@ -39,77 +43,81 @@
         <div class="photos__promo photos-promo">
           <p class="photos-promo__descr">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
+        <span class="photos__top">Панорама дня</span>
+        <img class="photos__img" src="img/panorama-mobile@1x.jpg" alt="Фотография Анны">
 
-        <article class="photos__item photo">
-          <span class="photo__top">Панорама дня</span>
-          <img class="photo__img" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография Анны">
-          <div class="photo__wrapper">
-            <h3 class="photo__name">Анна</h3>
-            <span class="photo__time">(5 минут назад)</span>
-            <p class="photo__descr">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <span class="photo__like">Нравится: 215</span>
-          </div>
-        </article>
+        <div class="container">
+          <article class="photos__item">
+            <div class="photos__wrapper">
+              <h3 class="photos__name">Анна</h3>
+              <span class="photos__time">(5 минут назад)</span>
+              <p class="photos__descr">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <span class="photos__like">Нравится: 215</span>
+            </div>
+          </article>
 
-        <article class="photos__item photo">
-          <img class="photo__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография Левона">
-          <div class="photo__wrapper">
-            <h3 class="photo__name">Левон</h3>
-            <span class="photo__time">(5 часов назад)</span>
-            <p class="photo__descr">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <span class="photo__like">Нравится: 356</span>
-          </div>
-        </article>
+          <div class="photo__container">
+            <article class="photo">
+              <img class="photo__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография Левона">
+              <div class="photo__wrapper">
+                <h3 class="photo__name">Левон</h3>
+                <span class="photo__time">(5 часов назад)</span>
+                <p class="photo__descr">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <span class="photo__like">Нравится: 356</span>
+              </div>
+            </article>
 
-        <article class="photos__item photo">
-          <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография Антона">
-          <div class="photo__wrapper">
-            <h3 class="photo__name">Антон</h3>
-            <span class="photo__time">(12 часов назад)</span>
-            <p class="photo__descr">Соседи будут рады!</p>
-            <span class="photo__like">Нравится: 666</span>
-          </div>
-        </article>
+            <article class="photo">
+              <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография Антона">
+              <div class="photo__wrapper">
+                <h3 class="photo__name">Антон</h3>
+                <span class="photo__time">(12 часов назад)</span>
+                <p class="photo__descr">Соседи будут рады!</p>
+                <span class="photo__like">Нравится: 666</span>
+              </div>
+            </article>
 
-        <article class="photos__item photo">
-          <img class="photo__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография Бориса">
-          <div class="photo__wrapper">
-            <h3 class="photo__name">Борис</h3>
-            <span class="photo__time">(20 часов назад)</span>
-            <p class="photo__descr">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <span class="photo__like">Нравится: 215</span>
-          </div>
-        </article>
+            <article class="photo">
+              <img class="photo__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография Бориса">
+              <div class="photo__wrapper">
+                <h3 class="photo__name">Борис</h3>
+                <span class="photo__time">(20 часов назад)</span>
+                <p class="photo__descr">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <span class="photo__like">Нравится: 215</span>
+              </div>
+            </article>
 
-        <article class="photos__item photo">
-          <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография Сергея">
-          <div class="photo__wrapper">
-            <h3 class="photo__name">Сергей</h3>
-            <span class="photo__time">(25 часов назад)</span>
-            <p class="photo__descr">Самая кубанская в мире!</p>
-            <span class="photo__like">Нравится: 4</span>
-          </div>
-        </article>
+            <article class="photo">
+              <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография Сергея">
+              <div class="photo__wrapper">
+                <h3 class="photo__name">Сергей</h3>
+                <span class="photo__time">(25 часов назад)</span>
+                <p class="photo__descr">Самая кубанская в мире!</p>
+                <span class="photo__like">Нравится: 4</span>
+              </div>
+            </article>
 
-        <article class="photos__item photo">
-          <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография Максима">
-          <div class="photo__wrapper">
-            <h3 class="photo__name">Максим</h3>
-            <span class="photo__time">(40 часов назад)</span>
-            <p class="photo__descr">Где снег-то?</p>
-            <span class="photo__like">Нравится: 150</span>
-          </div>
-        </article>
+            <article class="photo">
+              <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография Максима">
+              <div class="photo__wrapper">
+                <h3 class="photo__name">Максим</h3>
+                <span class="photo__time">(40 часов назад)</span>
+                <p class="photo__descr">Где снег-то?</p>
+                <span class="photo__like">Нравится: 150</span>
+              </div>
+            </article>
 
-        <article class="photos__item photo">
-          <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография Надежды">
-          <div class="photo__wrapper">
-            <h3 class="photo__name">Надежда</h3>
-            <span class="photo__time">(45 часов назад)</span>
-            <p class="photo__descr">Всем GM и взаимные лайки!</p>
-            <span class="photo__like">Нравится: 2560</span>
+            <article class="photo">
+              <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография Надежды">
+              <div class="photo__wrapper">
+                <h3 class="photo__name">Надежда</h3>
+                <span class="photo__time">(45 часов назад)</span>
+                <p class="photo__descr">Всем GM и взаимные лайки!</p>
+                <span class="photo__like">Нравится: 2560</span>
+              </div>
+            </article>
           </div>
-        </article>
+        </div>
       </section>
 
       <section class="upload">
@@ -118,47 +126,53 @@
           <p class="upload-promo__first">Затмите их всех!</p>
           <p class="upload-promo__second">Выкладывайте все, что накопилось в телефоне!</p>
         </div>
-        <div class="upload__wrapper">
-          <img class="upload__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Загружаемая фотография">
-          <ul class="upload__list">
-            <li class="upload__crop"></li>
-            <li class="upload__fill"></li>
-            <li class="upload__contrast"></li>
-          </ul>
-          <div class="upload__range-control">
-            <div class="upload__scale">
-              <div class="upload__bar"></div>
+        <div class="upload__background">
+          <div class="upload__wrapper">
+            <img class="upload__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Загружаемая фотография">
+            <div class="upload__customize">
+              <ul class="upload__list">
+                <li class="upload__crop"></li>
+                <li class="upload__fill"></li>
+                <li class="upload__contrast"></li>
+              </ul>
+              <div class="upload__range-control">
+                <div class="upload__scale">
+                  <div class="upload__bar"></div>
+                </div>
+                <div class="upload__toggle"></div>
+              </div>
+              <button class="upload__button upload__button_post">Запостить</button>
+              <button class="upload__button upload__button_cancel">Отмена</button>
             </div>
-            <div class="upload__toggle"></div>
           </div>
-          <button class="upload__button upload__button_post">Запостить</button>
-          <button class="upload__button upload__button_cancel">Отмена</button>
         </div>
       </section>
     </main>
 
-    <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Пинк">
-      </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link_twitter" href="#">Мы в Твиттере</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link_facebook" href="#">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link_youtube" href="#">Мы на Ютубе</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="colyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
-      </div>
-    </footer>
+    <div class="container">
+      <footer class="page-footer page-footer_inner">
+        <a class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Пинк">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link_twitter" href="#">Мы в Твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link_facebook" href="#">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link_youtube" href="#">Мы на Ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="colyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </div>
+      </footer>
+    </div>
 
   </body>
 </html>
