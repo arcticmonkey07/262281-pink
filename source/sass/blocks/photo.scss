@@ -17,6 +17,7 @@
 
 .photo:nth-child(2n) {
   margin-right: 0;
+
   @media (min-width: $desktop-width) {
     margin-right: 20px;
   }

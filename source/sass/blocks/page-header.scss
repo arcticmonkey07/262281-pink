@@ -6,17 +6,19 @@
     flex-wrap: wrap;
     min-height: 730px;
   }
+
   @media (min-width: $desktop-width) {
     min-height: 953px;
   }
 }
 
-.page-header_photo {
+.page-header_inner {
   margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     min-height: 440px;
   }
+
   @media (min-width: $desktop-width) {
     min-height: 400px;
   }
@@ -49,12 +51,12 @@
   }
 }
 
-.page-header__container_photo {
+.page-header__container_inner {
   flex-wrap: wrap;
   min-height: 240px;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     min-height: 440px;
   }
 }
@@ -72,7 +74,6 @@
 }
 
 .page-header__title {
-  display: none;
   flex-grow: 1;
   font-size: 24px;
   line-height: 30px;
