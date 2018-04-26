@@ -1,14 +1,29 @@
 .download {
-  min-height: 270px;
   padding-top: 25px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #1d2631;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 620px;
+    background-color: transparent;
+    outline: 1px solid red;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 960px;
+  }
 }
 
 .download__wrapper {
-  margin: 0 auto;
-  width: 320px;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 300px;
+    outline: 1px solid red;
+  }
 }
 
 .download__promo {
@@ -16,49 +31,60 @@
   font-size: 40px;
   font-weight: 300;
   color: #ffffff;
-}
 
-.download__button {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.download__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.download__text {
-  font-weight: 100;
-  color: #ffffff;
-}
-
-@media (min-width: $tablet-width) {
-  .download {
-    margin: 0 auto;
-    width: 620px;
-    background-color: transparent;
-    outline: 1px solid red;
-  }
-
-  .download__wrapper {
-    margin: 0;
-    width: 300px;
-    outline: 1px solid red;
-  }
-
-  .download__promo {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .download {
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 960px;
-  }
+.download__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  width: 275px;
+  height: 49px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+}
+
+.download__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  list-style: none;
+}
+
+.download__item_apple {
+  width: 46px;
+  height: 57px;
+  background-image: url("../../img/logo-apple.svg");
+}
+
+.download__item_android {
+  width: 42px;
+  height: 47px;
+  background-image: url("../../img/logo-android.svg");
+}
+
+.download__item_windows {
+  width: 44px;
+  height: 42px;
+  background-image: url("../../img/logo-microsoft.svg");
+}
+
+.download__text {
+  display: block;
+  margin: 0;
+  padding-bottom: 32px;
+  font-weight: 100;
+  color: #ffffff;
+  text-align: center;
 }
