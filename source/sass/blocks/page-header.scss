@@ -1,8 +1,7 @@
 .page-header {
   display: flex;
   flex-wrap: wrap;
-  padding-right: 20px;
-  width: 300px;
+  width: 100%;
 }
 
 .page-header_closed {
@@ -43,10 +42,14 @@
 
 .page-header__background {
   position: absolute;
-  min-width: 320px;
+  min-width: 100%;
   min-height: 66px;
   background-color: #1d2631;
   opacity: 0.4;
+
+  @media (min-width: $tablet-width) {
+    min-height: 110px;
+  }
 }
 
 .page-header_opened .page-header__background {

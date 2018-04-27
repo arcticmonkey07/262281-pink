@@ -6,9 +6,9 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
+    padding-top: 0;
     width: 620px;
     background-color: transparent;
-    outline: 1px solid red;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,7 +22,6 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 300px;
-    outline: 1px solid red;
   }
 }
 
@@ -34,6 +33,11 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 192px;
+    line-height: 48px;
+    text-align: center;
   }
 }
 
@@ -41,6 +45,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   margin-bottom: 32px;
   width: 275px;
   height: 49px;
@@ -50,6 +55,11 @@
   color: #ffffff;
   border: 3px solid #ffffff;
   border-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+    width: 295px;
+  }
 }
 
 .download__list {
@@ -60,6 +70,12 @@
   margin-bottom: 25px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 35px;
+    width: 243px;
+  }
 }
 
 .download__item_apple {
@@ -87,4 +103,9 @@
   font-weight: 100;
   color: #ffffff;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 18px;
+  }
 }

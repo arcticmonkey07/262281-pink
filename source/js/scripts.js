@@ -1,6 +1,6 @@
 var navMain = document.querySelector('.main-nav');
-  var navToggle = document.querySelector('.main-nav__toggle');
-  var pageHeader = document.querySelector('.page-header');
+var navToggle = document.querySelector('.main-nav__toggle');
+var pageHeader = document.querySelector('.page-header');
 
   navMain.classList.remove('main-nav_nojs');
 
@@ -14,8 +14,12 @@ var navMain = document.querySelector('.main-nav');
     }
   });
 
-// pageHeader.classList.remove('page-header_closed');
-// pageHeader.classList.add('page-header_opened');
-
-// pageHeader.classList.add('page-header_closed');
-// pageHeader.classList.remove('page-header_opened');
+  navToggle.addEventListener('click', function() {
+    if (pageHeader.classList.contains('page-header_closed')) {
+      pageHeader.classList.remove('page-header_closed');
+      pageHeader.classList.add('page-header_opened');
+    } else {
+      pageHeader.classList.add('page-header_closed');
+      pageHeader.classList.remove('page-header_opened');
+    }
+  });

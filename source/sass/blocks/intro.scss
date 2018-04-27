@@ -5,7 +5,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 48px;
     min-height: 730px;
+    background-image:
+    url("../../img/iphone-hand-mobile@1x.png"),
+    url("../../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom, 0 0;
+    background-size: auto, cover;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,7 +25,7 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  min-height: 462px;
+  height: 462px;
   background-image:
     url("../../img/iphone-hand-mobile@1x.png"),
     url("../../img/bg-back-mobile@1x.jpg");
@@ -27,8 +34,8 @@
 
   @media (min-width: $tablet-width) {
     width: 620px;
-    min-height: 190px;
-    outline: 1px solid gray;
+    height: 92px;
+    background-image: none;
   }
 
   @media (min-width: $desktop-width) {

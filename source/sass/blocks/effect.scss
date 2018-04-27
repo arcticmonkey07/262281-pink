@@ -1,5 +1,35 @@
+.effect__wrapper {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 90px;
+    background-color: #f2f2f2;
+  }
+}
+
 .effect {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 108px;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 960px;
+  }
+}
+
+.effect__descr {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    width: 310px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 580px;
+  }
 }
 
 .effect__title {
@@ -7,40 +37,21 @@
   line-height: 36px;
   font-weight: 600;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.effect__text {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 295px;
+  }
 }
 
 .effect__link {
   color: $redColor;
   text-decoration: underline;
-}
-
-@media (min-width: $tablet-width) {
-  .effect {
-    display: flex;
-    margin: 0 auto;
-    margin-bottom: 90px;
-    width: 620px;
-    outline: 1px solid red;
-  }
-
-  .effect__descr {
-    margin-left: auto;
-    width: 310px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .effect__wrapper {
-    padding-bottom: 90px;
-    background-color: #f2f2f2;
-  }
-
-  .effect {
-    margin-bottom: 0;
-    width: 960px;
-  }
-
-  .effect__descr {
-    width: 580px;
-  }
 }
