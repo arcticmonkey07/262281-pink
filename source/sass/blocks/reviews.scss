@@ -1,3 +1,17 @@
 .reviews {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.reviews__svg {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-bottom: 47px;
+    text-align: center;
+  }
 }

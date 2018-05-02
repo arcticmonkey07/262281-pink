@@ -1,6 +1,20 @@
+.contacts {
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+    width: 960px;
+  }
+}
+
 .contacts__title {
   display: block;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   font-size: 24px;
   line-height: 30px;
   text-align: center;
@@ -9,6 +23,12 @@
     margin-bottom: 44px;
     font-size: 40px;
     line-height: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 
@@ -24,23 +44,46 @@
     margin: 0 auto;
     width: 570px;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-around;
+    width: auto;
+  }
 }
 
 .contacts__item {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
 .contacts__item_center {
   @media (min-width: $tablet-width) {
     flex-grow: 1;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
     flex-grow: 0;
+    margin-bottom: 16px;
+  }
+}
+
+.contacts__item_second {
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}
+
+.contacts__item_third {
+  @media (min-width: $desktop-width) {
+    order: 1;
   }
 }
 
@@ -53,6 +96,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 2px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .contacts__descr {
@@ -63,8 +110,39 @@
   color: $redColor;
   text-align: center;
 
+  &:hover {
+    color: $mainColor;
+  }
+
+  &:active {
+    color: $mainColor;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: 250px;
     margin: 0 auto;
+  }
+}
+
+.contacts__descr-text {
+  &:hover {
+    border-bottom: 1px solid $mainColor;
+  }
+
+  &:active {
+    border-bottom: none;
+  }
+}
+
+.contacts__descr_width {
+  margin-top: 3px;
+  margin-left: 11px;
+  width: 298px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-top: 6px;
+    width: 250px;
   }
 }

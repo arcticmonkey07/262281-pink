@@ -1,6 +1,7 @@
 .effect__wrapper {
   @media (min-width: $desktop-width) {
-    padding-bottom: 90px;
+    margin-bottom: 70px;
+    padding-bottom: 60px;
     background-color: #f2f2f2;
   }
 }
@@ -11,24 +12,38 @@
   @media (min-width: $tablet-width) {
     display: flex;
     margin: 0 auto;
-    margin-bottom: 108px;
+    margin-bottom: 95px;
     width: 620px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 940px;
+  }
+}
+
+.effect__svg {
+  width: 236px;
+  height: 276px;
+
+  @media (min-width: $desktop-width) {
+    width: 298px;
+    height: 345px;
   }
 }
 
 .effect__descr {
   @media (min-width: $tablet-width) {
+    margin-top: 30px;
     margin-left: auto;
     width: 310px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 580px;
+    margin-top: 83px;
+    width: 575px;
   }
 }
 
@@ -39,7 +54,14 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
+    margin-top: 7px;
     margin-bottom: 10px;
+    width: 180px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
+    width: auto;
   }
 }
 
@@ -47,11 +69,30 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-bottom: 10px;
-    width: 295px;
+    width: 305px;
+    letter-spacing: 0.3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 30px;
+    width: 575px;
+    letter-spacing: 0.4px;
   }
 }
 
 .effect__link {
   color: $redColor;
   text-decoration: underline;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 0.2px;
+}
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+  }
 }

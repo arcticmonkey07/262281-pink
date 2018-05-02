@@ -1,5 +1,5 @@
 .download {
-  padding-top: 25px;
+  padding-top: 27px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #1d2631;
@@ -14,7 +14,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 10px;
     padding-right: 10px;
-    width: 960px;
+    width: 940px;
   }
 }
 
@@ -39,16 +39,24 @@
     line-height: 48px;
     text-align: center;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+    width: 240px;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+  }
 }
 
 .download__button {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 0 auto;
   margin-bottom: 32px;
+  padding-top: 15px;
   width: 275px;
-  height: 49px;
+  height: 35px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 600;
@@ -56,25 +64,44 @@
   border: 3px solid #ffffff;
   border-radius: 30px;
 
+  &:hover {
+    color: $redColor;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba($redColor, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
     width: 295px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
+    font-size: 21px;
   }
 }
 
 .download__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 auto;
+  margin-bottom: 20px;
   padding: 0;
+  width: 205px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     margin-bottom: 35px;
-    width: 243px;
+    width: 209px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
   }
 }
 
@@ -85,12 +112,14 @@
 }
 
 .download__item_android {
+  margin-top: 8px;
   width: 42px;
   height: 47px;
   background-image: url("../../img/logo-android.svg");
 }
 
 .download__item_windows {
+  margin-top: 10px;
   width: 44px;
   height: 42px;
   background-image: url("../../img/logo-microsoft.svg");
@@ -99,7 +128,7 @@
 .download__text {
   display: block;
   margin: 0;
-  padding-bottom: 32px;
+  padding-bottom: 30px;
   font-weight: 100;
   color: #ffffff;
   text-align: center;

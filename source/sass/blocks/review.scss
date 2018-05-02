@@ -11,11 +11,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 820px;
+    margin: 0 auto;
+    width: 715px;
   }
 }
 
 .review__title {
+  margin-bottom: 13px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 600;
@@ -26,15 +28,27 @@
     margin-bottom: 0;
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 5px;
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .review__description {
+  margin-top: 0;
   line-height: 30px;
   text-align: center;
+  letter-spacing: 0.3px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     letter-spacing: 0.3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
   }
 }
 
@@ -47,6 +61,11 @@
   @media (min-width: $tablet-width) {
     display: block;
     order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 

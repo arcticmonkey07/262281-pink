@@ -69,6 +69,10 @@
   margin-top: 22px;
   margin-bottom: 17px;
   padding-left: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .page-header__title {
