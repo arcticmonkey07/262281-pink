@@ -18,21 +18,3 @@
     width: 940px;
   }
 }
-
-.container_desktop {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  width: 320px;
-
-  @media (min-width: $tablet-width) {
-    width: 660px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 940px;
-  }
-}

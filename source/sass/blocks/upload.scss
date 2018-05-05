@@ -3,26 +3,37 @@
 }
 
 .upload-promo {
-  margin-bottom: 45px;
+  margin-bottom: 63px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+    font-size: 18px;
+  }
 }
 
 .upload-promo__first {
   margin: 0;
+  letter-spacing: 0.3px;
 }
 
 .upload-promo__second {
   margin: 0 auto;
   width: 260px;
+  letter-spacing: 0.3px;
 
   @media (min-width: $tablet-width) {
-    width: 400px;
+    width: 435px;
   }
 }
 
 .upload__background {
-  background-color: #f2f2f2;
+  background-color: $grayBg;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
@@ -33,50 +44,317 @@
 }
 
 .upload__wrapper {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 40px;
-  background-color: #f2f2f2;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     margin: 0 auto;
+    padding-bottom: 44px;
     width: 620px;
   }
 
   @media (min-width: $desktop-width) {
     width: 800px;
+    text-align: left;
   }
 }
 
 .upload__img {
-  margin-right: 20px;
-  width: 300px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 400px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-right: 90px;
+    margin-left: 10px;
+    margin-right: 41px;
   }
 }
 
 .upload__customize {
-  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 125px;
+  }
 }
 
-.upload__list {
-  margin: 0;
+.upload__crop {
+  width: 60px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-left: 13px;
+    margin-top: 8px;
+    width: auto;
+  }
+}
+
+.upload__svg-crop {
+  padding-left: 34px;
+
+  @media (min-width: $tablet-width) {
+    width: 25px;
+    height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -14px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.upload__crop-bar .upload__toggle {
+  @media (min-width: $tablet-width) {
+    right: -166px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -90px;
+  }
+}
+
+.upload__fill {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.upload__svg-fill {
+  padding-left: 54px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 3px;
+    padding-left: 48px;
+    width: 25px;
+    height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -12px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.upload__fill-bar {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.upload__fill-bar .upload__toggle {
+  @media (min-width: $tablet-width) {
+    right: -44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -265px;
+  }
+}
+
+.upload__contrast {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.upload__svg-contrast {
+  padding-top: 7px;
+  padding-left: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 3px;
+    padding-left: 53px;
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -7px;
+    padding-right: 10px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.upload__contrast-bar {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.upload__contrast-bar .upload__toggle {
+  @media (min-width: $tablet-width) {
+    right: -119px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -179px;
+  }
+}
+
+.upload__range-control {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 39px;
+  padding-top: 30px;
+  width: 280px;
+  height: 36px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 64px;
+    left: -19px;
+    width: 320px;
+    height: 1px;
+    background-color: #dddfe0;
+
+    @media (min-width: $tablet-width) {
+      top: 48px;
+      left: -27px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 44px;
+      left: -46px;
+      width: 410px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    padding-top: 12px;
+    padding-left: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+    padding-left: 27px;
+  }
+}
+
+.upload__scale {
+  margin-left: 19px;
+  width: 240px;
+  height: 2px;
+  background-color: $mainColor;
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
+}
+
+.upload__toggle {
+  position: relative;
+  top: -7px;
+  right: -211px;
+  width: 10px;
+  height: 10px;
   padding: 0;
-  list-style: none;
+  border: 2px solid $redColor;
+  background-color: $grayBg;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:active {
+    background-color: $redColor;
+  }
+}
+
+.upload__button-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-left: 49px;
+  }
 }
 
 .upload__button {
+  display: inline-block;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 17px;
+  min-width: 280px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 600;
+  background-color: $grayBg;
+  border-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -6px;
+    padding-left: 9px;
+    min-width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    padding-left: 19px;
+    min-width: 183px;
+  }
 }
 
 .upload__button_post {
+  margin-bottom: 11px;
   color: $redColor;
+  border: 3px solid $redColor;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 45px;
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    color: #ffffff;
+    background-color: $redColor;
+  }
+
+  &:active {
+    color: rgba(242, 242, 242, 0.3);
+  }
 }
 
 .upload__button_cancel {
-  color: rgba(40, 54, 69, 0.1);
+  color: rgba($mainColor, 0.1);
+  border: 3px solid #dddfe0;
+
+  &:hover {
+    color: rgba($mainColor, 0.3);
+    border: 3px solid #b5b9be;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+    background-color: #b5b9be;
+    border: 3px solid #b5b9be;
+  }
 }

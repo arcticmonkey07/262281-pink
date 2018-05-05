@@ -56,10 +56,11 @@
 
 .main-nav_opened {
   display: block;
-}
+  margin-bottom: -64px;
 
-.main-nav_no-js {
-  display: block;
+  @media (min-width: $tablet-width) {
+    margin-bottom: -110px;
+  }
 }
 
 .main-nav__list {
@@ -71,6 +72,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 22px;
   }
 }
 
@@ -91,6 +93,7 @@
   text-transform: uppercase;
 
   @media (min-width: $desktop-width) {
+    padding-top: 0;
     font-size: 18px;
     line-height: 18px;
     font-weight: 300;
@@ -106,6 +109,14 @@
       color: #ffffff;
       opacity: 0.3;
     }
+  }
+
+  &:hover {
+    color: $redColor;
+  }
+
+  &:active {
+    color: rgba($redColor, 0.3);
   }
 }
 

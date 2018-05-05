@@ -1,14 +1,20 @@
 .contacts {
   margin: 0 auto;
-  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 620px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 20px;
-    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 940px;
   }
 }
 

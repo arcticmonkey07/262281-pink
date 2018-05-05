@@ -6,12 +6,16 @@
 }
 
 .photo {
-  margin-bottom: 20px;
-  margin-right: 20px;
-  width: 300px;
+  margin-bottom: 21px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+    width: 300px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 }
 
@@ -30,20 +34,71 @@
 }
 
 .photo__img {
-  width: 300px;
+  width: 280px;
+  height: 180px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .photo__wrapper {
   display: flex;
   flex-wrap: wrap;
-  background-color: #f3f3f3;
+  margin-top: -6px;
+  padding-top: 18px;
+  padding-left: 17px;
+  padding-bottom: 21px;
+  background-color: $grayBg;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+    padding-left: 27px;
+  }
 }
 
 .photo__name {
   margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo__time {
+  padding-left: 4px;
+}
+
+.photo__descr {
+  margin: 0;
+  margin-bottom: 8px;
+  width: 100%;
+  letter-spacing: 0.3px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13px;
+    padding-right: 25px;
+  }
+}
+
+.photo__descr_margin {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+  }
 }
 
 .photo__like {
+  padding-left: 32px;
   font-size: 12px;
   color: $redColor;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
