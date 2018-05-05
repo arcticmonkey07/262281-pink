@@ -10,7 +10,7 @@
   }
 }
 
-.form__container{
+.form__container {
   display: flex;
   align-items: center;
   margin-bottom: 45px;
@@ -154,7 +154,7 @@
   &:last-child {
     @media (min-width: $tablet-width) {
       margin-bottom: 12px;
-      }
+    }
 
     @media (min-width: $desktop-width) {
       margin-left: 69px;
@@ -179,7 +179,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 18px;
-    padding-left: 0px;
+    padding-left: 0;
     padding-right: 20px;
   }
 
@@ -279,7 +279,7 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     padding-top: 34px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     width: 936px;
   }
 }
@@ -355,7 +355,7 @@
   position: absolute;
   width: 35px;
   height: 35px;
-  background-image: url(../../img/icon-yes.svg);
+  background-image: url("../../img/icon-yes.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: #ffffff;
