@@ -10,7 +10,11 @@
     <header class="page-header page-header_closed">
       <div class="page-header__container">
         <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <nav class="main-nav main-nav_closed">
@@ -68,7 +72,7 @@
               <li class="information__item">
                 <figure class="information__img information__img_second"></figure>
                 <h3 class="information__title">Меняет мир вокруг</h3>
-                <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br class="information__text-transfer"> усилить эффект</p>
               </li>
               <li class="information__item">
                 <figure class="information__img information__img_third"></figure>
@@ -88,8 +92,8 @@
             </svg>
           </div>
           <div class="effect__descr">
-            <h2 class="effect__title">Эффект на 24 часа!</h2>
-            <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <h2 class="effect__title">Эффект<br class="effect__transfer"> на 24 часа!</h2>
+            <p class="effect__text">Британские ученые провели исследования и доказали,<br class="effect__transfer-desk"> что положительный эффект<br class="effect__transfer"> от использования приложения длится целые сутки!</p>
             <a class="effect__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>

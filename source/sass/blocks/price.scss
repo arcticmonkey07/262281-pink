@@ -2,19 +2,19 @@
   margin-bottom: 46px;
   padding-top: 93px;
   padding-bottom: 45px;
-  background: linear-gradient(175deg, #ffffff 0%, #ffffff 10%, #f2f2f2 10%);
+  background: linear-gradient(175deg, #ffffff 0%, #ffffff 10%, $grayBg 10%);
 
   @media (min-width: $tablet-width) {
     margin-bottom: 43px;
     padding-top: 84px;
     padding-bottom: 30px;
-    background: linear-gradient(176deg, #ffffff 0%, #ffffff 12%, #f2f2f2 12%);
+    background: linear-gradient(176deg, #ffffff 0%, #ffffff 12%, $grayBg 12%);
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 65px;
     padding-bottom: 95px;
-    background: linear-gradient(175deg, #ffffff 0%, #ffffff 24%, #f2f2f2 24%);
+    background: linear-gradient(175deg, #ffffff 0%, #ffffff 24%, $grayBg 24%);
   }
 }
 
@@ -196,41 +196,3 @@
     display: table;
   }
 }
-
-// @media (min-width: $tablet-width) {
-//   .price__wrapper {
-//     margin: 0 auto;
-//     width: 620px;
-//     outline: 1px solid red;
-//   }
-
-//   .price__item_first {
-//     display: table;
-//   }
-
-//   .price__item_base {
-//     display: table;
-//   }
-
-//   .price__item_unlim {
-//     display: table;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .price__wrapper {
-//     width: 960px;
-//   }
-
-//   .price__item_first {
-//     display: table;
-//   }
-
-//   .price__item_base {
-//     display: table;
-//   }
-
-//   .price__item_unlim {
-//     display: table;
-//   }
-// }

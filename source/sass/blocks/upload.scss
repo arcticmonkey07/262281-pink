@@ -217,7 +217,7 @@
   margin: 0 auto;
   margin-bottom: 39px;
   padding-top: 30px;
-  width: 280px;
+  width: 242px;
   height: 36px;
 
   &::after {
@@ -225,7 +225,7 @@
     position: absolute;
     top: 64px;
     left: -19px;
-    width: 320px;
+    width: 274px;
     height: 1px;
     background-color: #dddfe0;
 
@@ -307,7 +307,7 @@
   border-radius: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-left: -6px;
+    margin-left: 31px;
     padding-left: 9px;
     min-width: 260px;
   }

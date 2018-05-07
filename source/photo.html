@@ -10,7 +10,11 @@
     <header class="page-header page-header_closed">
       <div class="page-header__container">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <nav class="main-nav main-nav_closed">
@@ -42,9 +46,9 @@
         <p class="photos__promo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="photos__img-wrapper">
           <picture>
-            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
-            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
-            <img class="photos__img" src="img/panorama-mobile@1x.jpg" alt="Фотография Анны">
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="photos__img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография Анны">
           </picture>
         </div>
         <div class="container">
@@ -60,9 +64,9 @@
           <div class="photo__container">
             <article class="photo">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
-                <img class="photo__img" src="img/photo-car-mobile@1x.jpg" alt="Фотография Левона">
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография Левона">
               </picture>
               <div class="photo__wrapper">
                 <h3 class="photo__name">Левон</h3>
@@ -74,9 +78,9 @@
 
             <article class="photo">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
-                <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" alt="Фотография Антона">
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография Антона">
               </picture>
               <div class="photo__wrapper">
                 <h3 class="photo__name">Антон</h3>
@@ -88,9 +92,9 @@
 
             <article class="photo">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
-                <img class="photo__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография Бориса">
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография Бориса">
               </picture>
               <div class="photo__wrapper">
                 <h3 class="photo__name">Борис</h3>
@@ -102,9 +106,9 @@
 
             <article class="photo">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
-                <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография Сергея">
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография Сергея">
               </picture>
               <div class="photo__wrapper">
                 <h3 class="photo__name">Сергей</h3>
@@ -116,9 +120,9 @@
 
             <article class="photo">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
-                <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография Максима">
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография Максима">
               </picture>
               <div class="photo__wrapper">
                 <h3 class="photo__name">Максим</h3>
@@ -130,9 +134,9 @@
 
             <article class="photo">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
-                <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография Надежды">
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография Надежды">
               </picture>
               <div class="photo__wrapper">
                 <h3 class="photo__name">Надежда</h3>
@@ -154,9 +158,9 @@
         <div class="upload__background">
           <div class="upload__wrapper">
             <picture>
-              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
-              <img class="upload__img" src="img/photo-road-mobile@1x.jpg" alt="Загружаемая фотография">
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
+              <img class="upload__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Загружаемая фотография">
             </picture>
             <div class="upload__customize-wrapper">
               <div class="upload__customize">

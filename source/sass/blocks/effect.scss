@@ -69,6 +69,20 @@
   }
 }
 
+.effect__transfer {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.effect__transfer-desk {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
 .effect__text {
   @media (min-width: $tablet-width) {
     margin-top: 0;
