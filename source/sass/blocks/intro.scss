@@ -11,7 +11,7 @@
       url("../img/iphone-hand-tablet@1x.png"),
       url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: -20px bottom, -270px 0;
+    background-position: right bottom, -270px 0;
     background-size: auto, cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -48,6 +48,7 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  width: 280px;
   height: 462px;
   background-image:
     url("../img/iphone-hand-mobile@1x.png"),

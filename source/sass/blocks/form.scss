@@ -375,7 +375,7 @@
   position: absolute;
   width: 35px;
   height: 35px;
-  background-image: url("../../img/icon-yes.svg");
+  background-image: url("../img/icon-yes.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: #ffffff;
@@ -473,6 +473,7 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    display: block;
     margin-bottom: -8px;
     width: 60px;
     height: 62px;
@@ -648,6 +649,7 @@
   color: $mainColor;
   border: 2px solid #e5e5e5;
   letter-spacing: 0.3px;
+  resize: vertical;
 
   @media (min-width: $tablet-width) {
     padding-top: 15px;
