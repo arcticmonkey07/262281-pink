@@ -1,8 +1,5 @@
 .contacts {
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 280px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-left: 20px;
@@ -16,6 +13,31 @@
     padding-right: 10px;
     width: 940px;
   }
+}
+
+.contacts__wrapper {
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  padding-top: 76px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
+  background-color: #ffffff;
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: 0;
+  //   width: 595px;
+  //   height: 62px;
+  //   background-image: url("../img/bg-triangle-white-footer.svg");
+  // }
+}
+
+.contacts__svg {
+  // fill: #ffffff;
 }
 
 .contacts__title {
