@@ -1,38 +1,84 @@
 .map {
-  height: 200px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0% 100%;
+  max-height: 200px;
+  overflow: hidden;
 
-  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //   background-image: url("../img/bg-map-mobile@2x.jpg");
-  //   background-size: cover;
-  //   background-position: 0% -432px;
-  // }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0;
+    border-style: solid;
+    border-width: 34px 160px 0 160px;
+    border-color: #ffffff transparent transparent transparent;
+  }
+}
 
-  // @media (min-width: $tablet-width) {
-  //   height: 372px;
-  //   background-image: url("../img/bg-map-tablet@1x.jpg");
-  //   background-size: 700px;
-  //   background-position: -20px -349px;
+.map_enlarge {
+  display: block;
+  height: 100%;
+}
 
-  //   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //     background-image: url("../img/bg-map-tablet@2x.jpg");
-  //     background-size: 700px;
-  //     background-position: -20px -349px;
-  //   }
-  // }
+.map__wrapper {
+  position: relative;
 
-  // @media (min-width: $desktop-width) {
-  //   height: 483px;
-  //   background-image: url("../img/bg-map-desktop@1x.jpg");
-  //   background-size: 1200px;
-  //   background-position: 0 -295px;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 39px;
+    width: 39px;
+    left: 50%;
+    top: 94px;
+    transform: translateX(-50%);
+    background-color: $redColor;
+    border: 1px solid grey;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 10px #ffffff;
+  }
+}
 
-  //   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //     background-image: url("../img/bg-map-desktop@2x.jpg");
-  //     background-size: 1200px;
-  //     background-position: 0 -295px;
-  //   }
-  // }
+.map__image {
+  position: relative;
+  top: -445px;
+  width: 100%;
+  z-index: -1;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    max-height: 375px;
+
+    &::before {
+      border-width: 70px 330px 0 330px;
+    }
+  }
+
+  .map__wrapper {
+    &::before {
+      top: 193px;
+    }
+  }
+
+  .map__image {
+    top: -319px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    max-height: 504px;
+
+    &::before {
+      border-width: 100px 600px 0 600px;
+    }
+  }
+  .map__wrapper {
+    &::before {
+      top: 263px;
+    }
+  }
+
+  .map__image {
+    top: -275px;
+  }
 }
