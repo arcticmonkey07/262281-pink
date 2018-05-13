@@ -196,7 +196,7 @@
 }
 
 .photos__like {
-  padding-left: 32px;
+  order: 2;
   font-size: 12px;
   color: $redColor;
   text-transform: uppercase;
@@ -205,10 +205,26 @@
   @media (min-width: $tablet-width) {
     order: 1;
     margin-left: auto;
-    padding-right: 58px;
+    padding-right: 16px;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 62px;
+  }
+}
+
+.photos__svg {
+  order: 1;
+  padding-top: 6px;
+  padding-left: 1px;
+  margin-right: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    padding-right: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 32px;
   }
 }
