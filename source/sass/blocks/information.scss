@@ -147,6 +147,7 @@
 
 .information__img {
   @media (min-width: $desktop-width) {
+    display: block;
     margin: 0 auto;
     margin-bottom: 55px;
     width: 292px;

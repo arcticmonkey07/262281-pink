@@ -3,6 +3,10 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
 }
 
 .photo {
@@ -15,6 +19,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-right: 16px;
     margin-bottom: 53px;
   }
 }
@@ -34,8 +39,8 @@
 }
 
 .photo__img {
-  width: 280px;
-  height: 180px;
+  width: 100%;
+  height: auto;
 
   @media (min-width: $tablet-width) {
     width: 300px;
