@@ -19,6 +19,8 @@
 }
 
 .download__wrapper {
+  text-align: center;
+
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 300px;
@@ -65,6 +67,7 @@
   border: 3px solid #ffffff;
   border-radius: 30px;
   text-align: center;
+  cursor: pointer;
 
   &:hover {
     color: $redColor;
@@ -107,24 +110,29 @@
   }
 }
 
-.download__item_apple {
-  width: 46px;
-  height: 57px;
-  background-image: url("../../img/logo-apple.svg");
+.download__link {
+  display: block;
+  cursor: pointer;
 }
 
-.download__item_android {
+.download__link_apple {
+  width: 46px;
+  height: 57px;
+  background-image: url("../img/logo-apple.svg");
+}
+
+.download__link_android {
   margin-top: 8px;
   width: 42px;
   height: 47px;
-  background-image: url("../../img/logo-android.svg");
+  background-image: url("../img/logo-android.svg");
 }
 
-.download__item_windows {
+.download__link_windows {
   margin-top: 10px;
   width: 44px;
   height: 42px;
-  background-image: url("../../img/logo-microsoft.svg");
+  background-image: url("../img/logo-microsoft.svg");
 }
 
 .download__text {

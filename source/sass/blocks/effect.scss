@@ -28,7 +28,28 @@
   }
 }
 
+.effect__img {
+  position: relative;
+
+  &::before {
+    content: "24";
+    position: absolute;
+    top: 143px;
+    left: 64px;
+    font-size: 96px;
+    font-weight: 600;
+    color: #d22856;
+
+    @media (min-width: $desktop-width) {
+      top: 175px;
+      left: 80px;
+      font-size: 120px;
+    }
+  }
+}
+
 .effect__svg {
+  position: relative;
   width: 236px;
   height: 276px;
 
@@ -66,6 +87,20 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 22px;
     width: auto;
+  }
+}
+
+.effect__transfer {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.effect__transfer-desk {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }
 

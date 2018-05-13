@@ -1,23 +1,47 @@
 .copyright {
+  display: flex;
   text-align: center;
+  margin-top: 41px;
+  margin-left: 75px;
+  letter-spacing: 0.3px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 18px;
-    padding-right: 42px;
-    letter-spacing: 0.3px;
-    text-align: center;
+    margin-left: 92px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 19px;
-    padding-right: 40px;
+    margin-top: 3px;
+    margin-left: 227px;
     letter-spacing: 0.4px;
   }
 }
 
 .copyright__text {
+  margin-right: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
+    margin-right: 5px;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 18px;
+  }
+}
+
+.colyright__link {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
+
+.colyright__svg {
+  padding-left: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 14px;
+    padding-left: 9px;
   }
 }

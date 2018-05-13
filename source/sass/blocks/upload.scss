@@ -1,5 +1,11 @@
 .upload {
-  margin-bottom: 40px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 106px;
+  }
 }
 
 .upload-promo {
@@ -64,10 +70,10 @@
 }
 
 .upload__img {
-  width: 280px;
+  max-width: 280px;
 
   @media (min-width: $tablet-width) {
-    width: 300px;
+    max-width: 300px;
     height: 400px;
   }
 
@@ -80,7 +86,7 @@
 .upload__customize {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 34px;
+  margin-top: 39px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -217,21 +223,22 @@
   margin: 0 auto;
   margin-bottom: 39px;
   padding-top: 30px;
-  width: 280px;
+  width: 242px;
   height: 36px;
 
   &::after {
     content: "";
     position: absolute;
-    top: 64px;
+    top: 67px;
     left: -19px;
-    width: 320px;
+    width: 316px;
     height: 1px;
     background-color: #dddfe0;
 
     @media (min-width: $tablet-width) {
-      top: 48px;
+      top: 45px;
       left: -27px;
+      width: 274px;
     }
 
     @media (min-width: $desktop-width) {
@@ -243,7 +250,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
-    padding-top: 12px;
+    padding-top: 11px;
     padding-left: 8px;
   }
 
@@ -305,9 +312,10 @@
   font-weight: 600;
   background-color: $grayBg;
   border-radius: 30px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    margin-left: -6px;
+    margin-left: 31px;
     padding-left: 9px;
     min-width: 260px;
   }

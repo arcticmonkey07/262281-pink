@@ -21,7 +21,8 @@
   border: none;
   width: 50px;
   height: 24px;
-  background-image: url("../../img/icon-menu-burger.svg");
+  background-image: url("../img/icon-menu-burger.svg");
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin-top: 44px;
@@ -35,7 +36,7 @@
 .page-header_opened .main-nav__toggle {
   width: 24px;
   height: 24px;
-  background-image: url("../../img/icon-menu-cross.svg");
+  background-image: url("../img/icon-menu-cross.svg");
 }
 
 .main-nav__toggle_no-js {
