@@ -158,6 +158,10 @@
     width: 100%;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 38px;
+  }
+
   &:last-child {
     @media (min-width: $tablet-width) {
       margin-bottom: 34px;
@@ -198,7 +202,7 @@
   letter-spacing: 0.3px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 18px;
+    padding-top: 15px;
     padding-left: 0;
     padding-right: 20px;
   }
@@ -231,6 +235,7 @@
   outline: none;
 
   @media (min-width: $tablet-width) {
+    padding-top: 14px;
     width: 100%;
   }
 
@@ -250,12 +255,12 @@
 .form__input_contacts {
   @media (min-width: $tablet-width) {
     margin-bottom: -8px;
-    width: 417px;
+    width: 413px;
     border-right: none;
   }
 
   @media (min-width: $desktop-width) {
-    width: 292px;
+    width: 288px;
   }
 }
 
@@ -331,11 +336,10 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
     padding-left: 58px;
-    height: 177px;
+    height: 176px;
   }
 }
 
@@ -351,7 +355,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 52px;
+    margin-bottom: 47px;
   }
 }
 
@@ -482,6 +486,11 @@
     border-radius: 2px;
     cursor: pointer;
   }
+}
+
+.form__contacts-svg {
+  padding-top: 22px;
+  padding-left: 21px;
 }
 
 .form__platform-wrapper {

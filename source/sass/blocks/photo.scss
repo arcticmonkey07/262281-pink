@@ -52,13 +52,13 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: -6px;
-  padding-top: 18px;
+  padding-top: 24px;
   padding-left: 17px;
   padding-bottom: 21px;
   background-color: $grayBg;
 
   @media (min-width: $tablet-width) {
-    padding-top: 23px;
+    padding-top: 30px;
     padding-left: 27px;
   }
 }
