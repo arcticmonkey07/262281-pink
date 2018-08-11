@@ -64,3 +64,29 @@
     padding-left: 0;
   }
 }
+
+.page-header__logo--text {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo--glasses {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__logo--decore {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}

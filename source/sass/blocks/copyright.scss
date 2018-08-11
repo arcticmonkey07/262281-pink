@@ -31,14 +31,29 @@
   }
 }
 
-.colyright__link {
+.copyright__link {
   @media (min-width: $tablet-width) {
     display: inline-block;
   }
+
+  &:hover {
+    fill: #000;
+  }
+
+  &:active {
+    fill: #000;
+    opacity: 0.3;
+  }
 }
 
-.colyright__svg {
+.copyright__link--htmlacademy {
   padding-left: 5px;
+  fill: $redColor;
+  transition: .3s;
+
+  &:hover {
+    fill: #000;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 14px;

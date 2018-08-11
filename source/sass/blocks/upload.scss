@@ -86,6 +86,7 @@
 .upload__customize {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   margin-top: 39px;
 
   @media (min-width: $tablet-width) {

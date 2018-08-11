@@ -92,12 +92,13 @@
   border-bottom: 1px solid #000000;
   text-align: center;
   text-transform: uppercase;
+  transition: .3s;
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
     font-size: 18px;
     line-height: 18px;
-    font-weight: 300;
+    font-weight: 400;
     background-color: transparent;
     border: none;
     text-transform: none;
@@ -125,5 +126,9 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 10px;
     border-bottom: 2px solid #ffffff;
+  }
+
+  &:hover {
+    color: #ffffff;
   }
 }
