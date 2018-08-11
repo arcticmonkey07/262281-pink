@@ -11,7 +11,7 @@
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
     "gulp-posthtml": "^3.0.4",
-    "gulp-sass": "4.0.x",
+    "gulp-sass": "^4.0.1",
     "gulp-svgstore": "^6.1.1",
     "posthtml": "^0.11.3",
     "stylelint": "9.2.x",
