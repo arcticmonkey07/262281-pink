@@ -7,16 +7,31 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div style="display: none;">
+      <include src="img/sprite.svg"></include>
+    </div>
     <header class="page-header page-header_closed">
       <div class="page-header__container">
         <a class="page-header__logo">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
-          </picture>
+          <svg class="page-header__logo--text" width="74.426px" height="22.859px">
+            <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="header__logo page-header__logo--glasses" width="146.3px" height="40.375px">
+            <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="page-header__logo--decore" width="146.3px" height="40.375px">
+            <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+          </svg>
         </a>
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <svg class="main-nav__toggle--svg" width="49.945px" height="24.007px">
+            <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
+          </svg>
+          <svg class="main-nav__toggle--cross" width="23.867px" height="23.867px">
+            <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
+          </svg>
+        </button>
         <nav class="main-nav main-nav_closed">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
@@ -109,13 +124,8 @@
       <div class="container">
         <section class="reviews">
           <div class="reviews__svg">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="78.672px" height="63.789px" viewBox="0 0 78.672 63.789" enable-background="new 0 0 78.672 63.789" xml:space="preserve">
-              <g>
-                <path d="M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172 c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z"/>
-              </g>
-              <g>
-                <path d="M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z"/>
-              </g>
+            <svg class="reviews__svg-quotes" width="78.672px" height="63.789px">
+              <use xlink:href="img/sprite.svg#icon-quotes"></use>
             </svg>
           </div>
           <div class="slider">
@@ -132,6 +142,14 @@
               <button class="slider__switch" type="button"></button>
               <button class="slider__switch" type="button"></button>
             </div>
+            <button class="slider__button">
+              <svg class="slider__button-right--svg" width="21.706px" height="41.719px">
+                <use xlink:href="img/sprite.svg#icon-review-arrow-right"></use>
+              </svg>
+              <svg class="slider__button-left--svg" width="21.706px" height="41.719px">
+                <use xlink:href="img/sprite.svg#icon-review-arrow-left"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </div>
@@ -156,65 +174,74 @@
               </th>
             </tr>
             <tr class="price-table__row">
-              <td class="price-table__cell price-table__cell--wide">Розовый фильтр</td>
-              <td class="price-table__cell price-table__cell--yes">Розовый фильтр
-                <svg class="price-table__image price-table__image--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+              <td class="price-table__cell">Розовый фильтр</td>
+              <td class="price-table__cell">
+                <span class="price-table__cell-hidden">Розовый фильтр</span>
+                <svg class="price-table__image price-table__image--yes" width="27px" height="27px">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
                 </svg>
               </td>
-              <td class="price-table__cell price-table__cell--yes">Розовый фильтр
-                <svg class="price-table__image price-table__image--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+              <td class="price-table__cell">
+                <span class="price-table__cell-hidden">Розовый фильтр</span>
+                <svg class="price-table__image price-table__image--yes" width="27px" height="27px">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
                 </svg>
               </td>
-              <td class="price-table__cell price-table__cell--yes">Розовый фильтр
-                <svg class="price-table__image price-table__image--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                </svg>
-              </td>
-            </tr>
-            <tr class="price-table__row">
-              <td class="price-table__cell price-table__cell--wide">Смайлики</td>
-              <td class="price-table__cell">Смайлики
-                <svg class="price-table__image price-table__image--no" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                </svg>
-              </td>
-              <td class="price-table__cell price-table__cell--yes">Смайлики
-                <svg class="price-table__image price-table__image--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                </svg>
-              </td>
-              <td class="price-table__cell price-table__cell--yes">Смайлики
-                <svg class="price-table__image price-table__image--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+              <td class="price-table__cell">
+                <span class="price-table__cell-hidden">Розовый фильтр</span>
+                <svg class="price-table__image price-table__image--yes" width="27px" height="27px">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
                 </svg>
               </td>
             </tr>
             <tr class="price-table__row">
-              <td class="price-table__cell price-table__cell--wide">Комментарии</td>
-              <td class="price-table__cell">Комментарии
-                <svg class="price-table__image price-table__image--no" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+              <td class="price-table__cell">Смайлики</td>
+              <td class="price-table__cell">
+                <span class="price-table__cell-hidden">Смайлики</span>
+                <svg class="price-table__image price-table__image--no" width="27px" height="27px">
+                  <use xlink:href="img/sprite.svg#icon-no"></use>
                 </svg>
               </td>
-              <td class="price-table__cell">Комментарии
-                <svg class="price-table__image price-table__image--no" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+              <td class="price-table__cell">
+                <span class="price-table__cell-hidden">Смайлики</span>
+                <svg class="price-table__image price-table__image--yes" width="27px" height="27px">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
                 </svg>
               </td>
-              <td class="price-table__cell price-table__cell--yes">Комментарии
-                <svg class="price-table__image price-table__image--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+              <td class="price-table__cell">
+                <span class="price-table__cell-hidden">Смайлики</span>
+                <svg class="price-table__image price-table__image--yes" width="27px" height="27px">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="price-table__row">
+              <td class="price-table__cell">Комментарии</td>
+              <td class="price-table__cell">
+                <span class="price-table__cell-hidden">Комментарии</span>
+                <svg class="price-table__image price-table__image--no" width="27px" height="27px">
+                  <use xlink:href="img/sprite.svg#icon-no"></use>
+                </svg>
+              </td>
+              <td class="price-table__cell">
+                <span class="price-table__cell-hidden">Комментарии</span>
+                <svg class="price-table__image price-table__image--no" width="27px" height="27px">
+                  <use xlink:href="img/sprite.svg#icon-no"></use>
+                </svg>
+              </td>
+              <td class="price-table__cell">
+                <span class="price-table__cell-hidden">Комментарии</span>
+                <svg class="price-table__image price-table__image--yes" width="27px" height="27px">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
                 </svg>
               </td>
             </tr>
           </table>
         </div>
         <div class="slider__switches slider__switches_table">
-          <button class="slider__switch" type="button"></button>
-          <button class="slider__switch slider__switch_active" type="button"></button>
-          <button class="slider__switch" type="button"></button>
+          <button class="slider__switch slider__switch--left" type="button"></button>
+          <button class="slider__switch slider__switch--middle slider__switch_active " type="button"></button>
+          <button class="slider__switch slider__switch--right" type="button"></button>
         </div>
       </section>
 
@@ -242,11 +269,16 @@
       <section class="map">
         <h2 class="visually-hidden">Карта проезда</h2>
         <div class="map__wrapper">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12153.797428816933!2d30.324394719202488!3d59.93466639398382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1534067429490" width="100%" height="976" frameborder="0" style="border:0" allowfullscreen></iframe>
           <a href="#" class="map__enlarge">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/bg-map-desktop@1x.webp 1x, img/webp/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/bg-map-tablet@1x.webp 1x, img/webp/bg-map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/bg-map-mobile@1x.webp 1x, img/webp/bg-map-modile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-              <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
+              <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Наш офис находится по адресу г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8 ">
             </picture>
           </a>
         </div>
@@ -257,10 +289,12 @@
     <div class="container">
       <footer class="page-footer">
         <a class="page-footer__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-            <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Пинк">
-          </picture>
+          <svg class="page-footer__logo--tablet logo-pink-blue" width="146.3px" height="40.375px">
+            <use xlink:href="img/sprite.svg#logo-pink-blue"></use>
+          </svg>
+          <svg class="page-footer__logo--desktop logo-pink-blue-desktop" width="146.3px" height="40.375px">
+            <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+          </svg>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -296,14 +330,15 @@
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="colyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="colyright__svg" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-            <path fill="#d22856" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"></path>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__link--htmlacademy" width="26.943px" height="34.09px">
+              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </footer>
     </div>
   <script src="js/scripts.js"></script>
+  <script src="js/picturefill.js"></script>
   </body>
 </html>

@@ -23,3 +23,30 @@ var pageHeader = document.querySelector('.page-header');
       pageHeader.classList.remove('page-header_opened');
     }
   });
+
+var priceTable = document.querySelector('.price__table');
+var sliderSwitch = document.querySelector('.slider__switch');
+var tableRight = document.querySelector('.price__table--right');
+var switchRight = document.querySelector('.slider__switch--right');
+var tableLeft = document.querySelector('.price__table--left');
+var switchLeft = document.querySelector('.slider__switch--left');
+var tableMiddle = document.querySelector('.price__table');
+var switchMiddle = document.querySelector('.slider__switch--middle');
+var switchActive = document.querySelector('.slider__switch_active');
+
+  switchRight.addEventListener('click', function () {
+    priceTable.classList.remove('price__table--left');
+    sliderSwitch.classList.add('slider__switch_active');
+    priceTable.classList.add('price__table--right');
+  });
+
+  switchLeft.addEventListener('click', function () {
+    priceTable.classList.remove('price__table--right');
+    priceTable.classList.add('price__table--left');
+  });
+
+  switchMiddle.addEventListener('click', function () {
+    priceTable.classList.remove('price__table--right');
+    priceTable.classList.remove('price__table--left');
+    priceTable.classList.add('price__table');
+  });

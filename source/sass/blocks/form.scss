@@ -137,6 +137,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     order: 1;
     margin-bottom: 0;
     width: 620px;
@@ -230,6 +231,7 @@
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   color: $mainColor;
+  background-color: #ffffff;
   border: 2px solid #e5e5e5;
   letter-spacing: 0.5px;
   outline: none;
@@ -320,8 +322,13 @@
   letter-spacing: 0.3px;
 
   @media (min-width: $tablet-width) {
+    margin-left: 95px;
     padding-top: 0;
     width: 436px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 250px;
   }
 }
 
@@ -447,12 +454,17 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    margin-left: 150px;
     width: 260px;
     line-height: 18px;
     color: #d22856;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 300px;
   }
 }
 
@@ -543,8 +555,13 @@
   letter-spacing: 0.3px;
 
   @media (min-width: $tablet-width) {
+    margin-left: 130px;
     padding-top: 0;
     width: 368px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 30px;
   }
 }
 
@@ -642,7 +659,12 @@
   letter-spacing: 0.3px;
 
   @media (min-width: $tablet-width) {
+    margin-left: 111px;
     width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 330px;
   }
 }
 
@@ -656,6 +678,7 @@
   font-size: 18px;
   line-height: 30px;
   color: $mainColor;
+  background-color: #ffffff;
   border: 2px solid #e5e5e5;
   letter-spacing: 0.3px;
   resize: vertical;

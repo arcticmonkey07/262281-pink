@@ -1,0 +1,243 @@
+[33mcommit 4a3dfe59c1adce2664dcd4c10211178cc1cbcfe7[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mpink/master[m[33m)[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Sat Aug 11 11:46:25 2018 +0300
+
+    test
+
+[33mcommit 534ee72869379570d8c135313f252f8d7c64820f[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Sat Aug 11 11:11:53 2018 +0300
+
+    test
+
+[33mcommit 025cd42e1154df5547ecc9f9f283f1e662c0d16f[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Sat Aug 11 11:02:05 2018 +0300
+
+    Сделал svg sprite
+
+[33mcommit 1669b20483303cadc8a68854413cfb5c65c407ae[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;31mhtmlacademy/master[m[33m)[m
+Merge: 7622f76 9037c16
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sun May 13 14:52:48 2018 +0300
+
+    Merge pull request #9 from arcticmonkey07/module7-task2
+
+[33mcommit 9037c16c1133c0f3ebe2d0e5b83924c100e0b39a[m[33m ([m[1;31morigin/module7-task2[m[33m, [m[1;32mmodule7-task2[m[33m)[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Sun May 13 14:48:31 2018 +0300
+
+    исправил ошибку2
+
+[33mcommit b5e356905cbf99ce149f941068768e58a342ef14[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Sun May 13 14:47:46 2018 +0300
+
+    исправил ошибку
+
+[33mcommit 7622f76cece7051f031386b231e785c0290ddac0[m
+Merge: bb99c6a 30289b5
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sun May 13 14:45:58 2018 +0300
+
+    Merge pull request #8 from arcticmonkey07/module7-task1
+
+[33mcommit 30289b5ee0dace44f9f1bdb10eb3f64861a74f6f[m[33m ([m[1;31morigin/module7-task1[m[33m, [m[1;32mmodule7-task1[m[33m)[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Sun May 13 14:43:16 2018 +0300
+
+    исправил ошибку2
+
+[33mcommit 51caa2bb01bf6b60d936fc7f5551b6d10d3327e5[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Sun May 13 14:40:41 2018 +0300
+
+    исправил ошибку
+
+[33mcommit bb99c6a936aa10a8cebf6af6bf26b37e1aa96baf[m
+Merge: e03fb19 614326d
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sun May 13 14:34:58 2018 +0300
+
+    Merge pull request #7 from arcticmonkey07/module6-task1
+
+[33mcommit 614326d04c32a939ce92ed38acba518f09b39799[m[33m ([m[1;31morigin/module6-task1[m[33m)[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Sun May 13 14:32:43 2018 +0300
+
+    исправил ошибки
+
+[33mcommit 2ac1a3a2943d585b45fc560e578897c4fbfe88c4[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Sun May 13 13:48:37 2018 +0300
+
+    исправил npm test
+
+[33mcommit 61786f70008a029ba167c7b22fd920da0717dfb5[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Sun May 13 13:47:12 2018 +0300
+
+    исправил лого академии, кнопки в form
+
+[33mcommit 74dd223dae7c02b1b93b3cfefac699f62bc74eca[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Sun May 13 11:35:26 2018 +0300
+
+    исправил ошибки
+
+[33mcommit 79ff5069ba04542fac7737e3a7734cd6dec4e2a4[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Sun May 13 11:32:29 2018 +0300
+
+    исправил ошибки
+
+[33mcommit 71824157b19eb358a8511a2599afb35a16b656af[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Thu May 10 00:06:07 2018 +0300
+
+    исправляю ошибки2
+
+[33mcommit c958419689187aa67fbe4e00281638b7be92eb52[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Wed May 9 12:12:50 2018 +0300
+
+    исправляю ошибки 6го задания
+
+[33mcommit 5199deae24f61e054a8cc7d2319221d361dd3717[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Mon May 7 23:06:15 2018 +0300
+
+    сделал адаптивную графику
+
+[33mcommit e03fb1997e02b49bdee98a3abdd9e8511698a7a2[m
+Merge: 93b0f9a 0aeb58c
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sun May 6 11:15:21 2018 +0300
+
+    Merge pull request #6 from arcticmonkey07/module5-task1
+
+[33mcommit 0aeb58c0c77d2e45ecdd55d5fcfef69a9f1734a1[m[33m ([m[1;31morigin/module5-task1[m[33m, [m[1;32mmodule5-task1[m[33m)[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Sat May 5 16:26:51 2018 +0300
+
+    исправил npm test
+
+[33mcommit 672176fc7634b43f96726b0c9cdf1e7e4f49d616[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Sat May 5 16:21:37 2018 +0300
+
+    Доделал все страницы
+
+[33mcommit 714ae14ca8e57ae6595e901dcf3aad128f70cddc[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Wed May 2 16:30:40 2018 +0300
+
+    иправил npm test2
+
+[33mcommit dd660cada4ac04419cf2832dcf1316604a4c2626[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Wed May 2 16:25:14 2018 +0300
+
+    исправил npm test
+
+[33mcommit 942b5f9af54e0b8d9e94da4fac8ac28187b1223d[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Wed May 2 16:22:32 2018 +0300
+
+    сделал главную страницу по заданию 5
+
+[33mcommit 31cf9eb93404cda23c1a0a3913589a012ed851d3[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Fri Apr 27 23:22:31 2018 +0300
+
+    продолжаю делать верстку
+
+[33mcommit 93b0f9a433d7117ff6a306843ea0037473953dd1[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Thu Apr 26 22:12:47 2018 +0300
+
+    :gift: Добавляет остатки ретиновой и векторной графики
+
+[33mcommit d7cba5d3e7327576dd9010d1fa8351168dad4f6b[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Thu Apr 26 22:11:48 2018 +0300
+
+    начал делать декоративные элементы
+
+[33mcommit 54a7e8051d3033a5fee6cd926a201ab62d389b29[m
+Merge: 5a90433 df80183
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sun Apr 22 20:01:45 2018 +0300
+
+    Merge pull request #5 from arcticmonkey07/module4-task1
+
+[33mcommit df801832fdb08c48d1e9d5acb0905f7618cd62c7[m[33m ([m[1;31morigin/module4-task1[m[33m, [m[1;32mmodule4-task1[m[33m)[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Sun Apr 22 13:28:22 2018 +0300
+
+    сделал разметку сетки страницы form
+
+[33mcommit 1af07b7eafe1fecb1161adf1670c357001f7a0ed[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Sun Apr 22 11:50:06 2018 +0300
+
+    сделал сетку страницы photo
+
+[33mcommit 23c6163bb269ba78b6a73e2bb9f09d93f273705c[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Sat Apr 21 09:27:34 2018 +0300
+
+    исправил ошибки npm test
+
+[33mcommit 9d48f2e2848b8f64ab1db246d3285976d2bdbba9[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Sat Apr 21 00:13:07 2018 +0300
+
+    сделал адаптивную сетку главной страницы
+
+[33mcommit 5a9043391d74211cdbc9ee53df8422f004457f07[m
+Merge: 5627c54 5578e50
+Author: Alexander <elemeNtk0gm@gmail.com>
+Date:   Thu Apr 19 09:56:00 2018 +0300
+
+    Merge pull request #4 from arcticmonkey07/module3-task1
+    
+    Начинаем вёрстку с препроцессором
+
+[33mcommit 5578e501f67def131677fdbf44925004970b9873[m[33m ([m[1;31morigin/module3-task1[m[33m, [m[1;32mmodule3-task1[m[33m)[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Wed Apr 18 20:21:06 2018 +0300
+
+    исправил height
+
+[33mcommit bf6f5417f2bb12fc6e87933a8bab969e8dd4ad40[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Wed Apr 18 20:15:11 2018 +0300
+
+    Исправил ошибку npm run build
+
+[33mcommit e20da8846ab23432c57fa7723783d66d6e6a2877[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Tue Apr 17 23:26:31 2018 +0300
+
+    Исправил ошибки npm test
+
+[33mcommit 467daecf6c0bb6e62e5fcdf35bc9ee0edf89da5c[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Tue Apr 17 23:12:35 2018 +0300
+
+    Сделал фоновые изображения и параметры текста
+
+[33mcommit fe0a6757a7c554361d14e85cf4c2a5ecd604ade0[m
+Author: Peter <arcticmonkey07@gmail.com>
+Date:   Tue Apr 17 19:43:03 2018 +0300
+
+    добавил новую ветку
+
+[33mcommit 5627c542c02b5d5ae8f70683db01541734361f31[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Mon Apr 16 21:05:56 2018 +0300
+
+    :kissing_cat: Добавляет сборку Sass на Gulp
+
+[33mcommit a0f51a5406828150b5cb2c904445126881d48

@@ -129,6 +129,7 @@
   font-weight: 100;
   color: $redColor;
   text-align: center;
+  transition: .2s;
 
   &:hover {
     color: $mainColor;

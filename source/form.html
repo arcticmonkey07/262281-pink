@@ -10,11 +10,15 @@
     <header class="page-header page-header_closed">
       <div class="page-header__container">
         <a class="page-header__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
-          </picture>
+          <svg class="page-header__logo--text" width="74.426px" height="22.859px">
+            <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="header__logo page-header__logo--glasses" width="146.3px" height="40.375px">
+            <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="page-header__logo--decore" width="146.3px" height="40.375px">
+            <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+          </svg>
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <nav class="main-nav main-nav_closed">

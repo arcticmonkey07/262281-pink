@@ -28,4 +28,35 @@
   margin-bottom: 41px;
   width: 146px;
   text-align: center;
+
+    &-image:active {
+      opacity: .1;
+    }
+
+    &--desktop {
+      display: none;
+    }
+
+  @media (min-width: $desktop-width) {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+}
+
+.logo-pink-blue {
+  transition: .3s;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #000;
+    opacity: .3;
+  }
 }
