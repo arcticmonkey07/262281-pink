@@ -16,13 +16,13 @@
   position: relative;
   margin-top: 21px;
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 27px;
   background-color: transparent;
   border: none;
   width: 50px;
   height: 24px;
-  background-image: url("../img/icon-menu-burger.svg");
   cursor: pointer;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     margin-top: 44px;
@@ -33,10 +33,38 @@
   }
 }
 
-.page-header_opened .main-nav__toggle {
-  width: 24px;
-  height: 24px;
-  background-image: url("../img/icon-menu-cross.svg");
+.main-nav__toggle--svg {
+  transition: .3s;
+  fill: #fff;
+}
+
+.main-nav__toggle--svg:hover {
+  fill: $redColor;
+}
+
+.main-nav__toggle--svg:active {
+  opacity: .3;
+}
+
+.main-nav__toggle--cross {
+  transition: .3s;
+  fill: #fff;
+}
+
+.main-nav__toggle--cross:hover {
+  fill: $redColor;
+}
+
+.main-nav__toggle--cross:active {
+  opacity: .3;
+}
+
+.page-header_closed .main-nav__toggle--cross {
+  display: none;
+}
+
+.page-header_opened .main-nav__toggle--svg {
+  display: none;
 }
 
 .main-nav__toggle_no-js {

@@ -1,5 +1,13 @@
+.slider {
+  position: relative;
+}
+
 .slider__list {
   margin-bottom: 36px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .slider__switches {
@@ -28,9 +36,20 @@
   padding: 0;
   width: 6px;
   height: 6px;
-  background-color: #bec2c7;
-  border: 2px solid #bec2c7;
+  background-color: #7e868f;
+  border: 2px solid #7e868f;
   border-radius: 50%;
+  cursor: pointer;
+  opacity: .3;
+  transition: .3s;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .1;
+  }
 }
 
 .slider__switch_active {
@@ -40,4 +59,42 @@
   background-color: #ffffff;
   border: 2px solid $mainColor;
   border-radius: 50%;
+  opacity: 1;
+}
+
+.slider__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: .3;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: .1;
+  }
+}
+
+.slider__button-right--svg {
+  display: none;
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: 27px;
+      right: 0;
+      display: block;
+    }
+}
+
+.slider__button-left--svg {
+  display: none;
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: 27px;
+      left: 0;
+      display: block;
+    }
 }

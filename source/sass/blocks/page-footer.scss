@@ -48,6 +48,15 @@
   }
 }
 
-.logo-pink-blue:hover {
-  fill: #d22856;
+.logo-pink-blue {
+  transition: .3s;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #000;
+    opacity: .3;
+  }
 }
