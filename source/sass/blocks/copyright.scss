@@ -35,15 +35,6 @@
   @media (min-width: $tablet-width) {
     display: inline-block;
   }
-
-  &:hover {
-    fill: #000;
-  }
-
-  &:active {
-    fill: #000;
-    opacity: 0.3;
-  }
 }
 
 .copyright__link--htmlacademy {
@@ -53,6 +44,11 @@
 
   &:hover {
     fill: #000;
+  }
+
+  &:active {
+    fill: #000;
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {

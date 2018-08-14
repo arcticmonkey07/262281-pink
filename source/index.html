@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <div style="display: none;">
-      <include src="img/sprite.svg"></include>
-    </div>
     <header class="page-header page-header_closed">
       <div class="page-header__container">
         <a class="page-header__logo">
@@ -19,11 +20,11 @@
           <svg class="header__logo page-header__logo--glasses" width="146.3px" height="40.375px">
             <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
           </svg>
-          <svg class="page-header__logo--decore" width="146.3px" height="40.375px">
+          <svg class="page-header__logo--decore" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
             <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
           </svg>
         </a>
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle" type="button" aria-label="Кнопка открытия/закрытия выпадающего меню">
           <span class="visually-hidden">Открыть меню</span>
           <svg class="main-nav__toggle--svg" width="49.945px" height="24.007px">
             <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
@@ -64,13 +65,25 @@
             <a class="download__button button">Скачать приложение</a>
             <ul class="download__list">
               <li>
-                <a class="download__link download__link_apple"></a>
+                <a class="download__link download__link_apple">
+                  <svg class="" width="46.21px" height="56.753px">
+                    <use xlink:href="img/sprite.svg#logo-apple"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a class="download__link download__link_android"></a>
+                <a class="download__link download__link_android">
+                  <svg class="" width="42.084px" height="47.041px">
+                    <use xlink:href="img/sprite.svg#logo-android"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a class="download__link download__link_windows"></a>
+                <a class="download__link download__link_windows">
+                  <svg class="" width="43.922px" height="41.992px">
+                    <use xlink:href="img/sprite.svg#logo-microsoft"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
             <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -86,17 +99,17 @@
           <div class="information__inner">
             <ul class="information__list">
               <li class="information__item">
-                <picture class="information__img"></picture>
+                <p class="information__img"></p>
                 <h3 class="information__title">Поднимает настроение</h3>
                 <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               </li>
               <li class="information__item">
-                <picture class="information__img information__img_second"></picture>
+                <p class="information__img information__img_second"></p>
                 <h3 class="information__title">Меняет мир вокруг</h3>
                 <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br class="information__text-transfer"> усилить эффект</p>
               </li>
               <li class="information__item">
-                <picture class="information__img information__img_third"></picture>
+                <p class="information__img information__img_third"></p>
                 <h3 class="information__title">Заводит новых друзей</h3>
                 <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
@@ -138,14 +151,16 @@
               </li>
             </ul>
             <div class="slider__switches">
-              <button class="slider__switch slider__switch_active" type="button"></button>
-              <button class="slider__switch" type="button"></button>
-              <button class="slider__switch" type="button"></button>
+              <button class="slider__switch slider__switch_active" type="button" aria-label="Кнопка переключения на первый слайд"></button>
+              <button class="slider__switch" type="button" aria-label="Кнопка переключения на второй слайд"></button>
+              <button class="slider__switch" type="button" aria-label="Кнопка переключения на третий слайд"></button>
             </div>
-            <button class="slider__button">
+            <button class="slider__button" type="button" aria-label="Кнопка переключения к предыдущему отзыву">
               <svg class="slider__button-right--svg" width="21.706px" height="41.719px">
                 <use xlink:href="img/sprite.svg#icon-review-arrow-right"></use>
               </svg>
+            </button>
+            <button class="slider__button" type="button" aria-label="Кнопка переключения на следующему отзыву">
               <svg class="slider__button-left--svg" width="21.706px" height="41.719px">
                 <use xlink:href="img/sprite.svg#icon-review-arrow-left"></use>
               </svg>
@@ -239,9 +254,9 @@
           </table>
         </div>
         <div class="slider__switches slider__switches_table">
-          <button class="slider__switch slider__switch--left" type="button"></button>
-          <button class="slider__switch slider__switch--middle slider__switch_active " type="button"></button>
-          <button class="slider__switch slider__switch--right" type="button"></button>
+          <button class="slider__switch slider__switch--left" type="button" aria-label="Кнопка переключения на первый слайд"></button>
+          <button class="slider__switch slider__switch--middle slider__switch_active " type="button" aria-label="Кнопка переключения на второй слайд"></button>
+          <button class="slider__switch slider__switch--right" type="button" aria-label="Кнопка переключения на третий слайд"></button>
         </div>
       </section>
 
@@ -338,7 +353,9 @@
         </div>
       </footer>
     </div>
-  <script src="js/scripts.js"></script>
   <script src="js/picturefill.js"></script>
+  <script src="js/svg4everybody.js"></script>
+  <script>svg4everybody(); // run it now or whenever you are ready</script>
+  <script src="js/main.min.js"></script>
   </body>
 </html>

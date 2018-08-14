@@ -258,7 +258,6 @@
   @media (min-width: $tablet-width) {
     margin-bottom: -8px;
     width: 413px;
-    border-right: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -503,6 +502,7 @@
 .form__contacts-svg {
   padding-top: 22px;
   padding-left: 21px;
+  fill: $redColor;
 }
 
 .form__platform-wrapper {

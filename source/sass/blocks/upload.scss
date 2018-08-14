@@ -50,6 +50,7 @@
 }
 
 .upload__wrapper {
+  width: 280px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -86,7 +87,6 @@
 .upload__customize {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   margin-top: 39px;
 
   @media (min-width: $tablet-width) {
@@ -112,6 +112,7 @@
 
 .upload__svg-crop {
   padding-left: 34px;
+  fill: $redColor;
 
   @media (min-width: $tablet-width) {
     width: 25px;
@@ -143,6 +144,7 @@
 
 .upload__svg-fill {
   padding-left: 54px;
+  fill: $redColor;
 
   @media (min-width: $tablet-width) {
     padding-top: 3px;
@@ -185,6 +187,7 @@
 .upload__svg-contrast {
   padding-top: 7px;
   padding-left: 40px;
+  fill: $redColor;
 
   @media (min-width: $tablet-width) {
     padding-top: 3px;

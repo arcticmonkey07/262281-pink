@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   width: 100%;
   min-height: 66px;
-  background-color: rgba(29, 38, 50, 0.4);
+  background-color: rgba(0,0,0,.3);
 
   @media (min-width: $tablet-width) {
     min-height: 110px;
@@ -36,17 +36,17 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
+
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
-    width: 940px;
+
   }
 }
 
@@ -66,6 +66,17 @@
 }
 
 .page-header__logo--text {
+  transition: .3s;
+  fill: #fff;
+
+  &:hover {
+      fill: $redColor;
+    }
+
+    &:active {
+      opacity: .3;
+    }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -76,6 +87,16 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    transition: .3s;
+    fill: #fff;
+
+    &:hover {
+      fill: $redColor;
+    }
+
+    &:active {
+      opacity: .3;
+    }
   }
 
   @media (min-width: $desktop-width) {

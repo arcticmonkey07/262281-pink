@@ -99,6 +99,20 @@
 
 .photos__img-wrapper {
   position: relative;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: 959px) {
+    width: 960px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 
   &::before {
     content: "Панорама дня";
@@ -207,10 +221,6 @@
     margin-left: auto;
     padding-right: 16px;
   }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 62px;
-  }
 }
 
 .photos__svg {
@@ -218,6 +228,7 @@
   padding-top: 6px;
   padding-left: 1px;
   margin-right: 19px;
+  fill: $redColor;
 
   @media (min-width: $tablet-width) {
     margin-right: 0;
